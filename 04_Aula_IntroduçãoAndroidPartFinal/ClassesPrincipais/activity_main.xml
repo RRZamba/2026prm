@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Digite o Nome do otário"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teste" />
+
+    <TextView
+        android:id="@+id/teste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:text="Continuação \n Elementos Android Mil Grau"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0C2AB0"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTestar"
+        android:layout_width="134dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="54dp"
+        android:text="Cadastar o Otário"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMusica" />
+
+    <EditText
+        android:id="@+id/txtEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Digite o end do otário"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <CheckBox
+        android:id="@+id/cbAds"
+        android:layout_width="83dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="53dp"
+        android:text="ADS"
+        app:layout_constraintStart_toEndOf="@+id/cbBallet"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnd" />
+
+    <CheckBox
+        android:id="@+id/cbMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="20dp"
+        android:text="Música"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbBallet" />
+
+    <CheckBox
+        android:id="@+id/cbDormir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="26dp"
+        android:text="Dormir"
+        app:layout_constraintStart_toEndOf="@+id/cbMusica"
+        app:layout_constraintTop_toBottomOf="@+id/cbAds" />
+
+    <CheckBox
+        android:id="@+id/cbBallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="53dp"
+        android:text="Ballet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
